@@ -2,9 +2,11 @@
 
 To run this locally:
 
-1.- Install docker
+1.- At this moment all changes are direct in master, please checkout master branch, and update all dependencies in build.gradle
 
-2.- After successful installation:
+2.- Install docker
+
+3.- After successful installation:
 
 Run the following commands:
 
