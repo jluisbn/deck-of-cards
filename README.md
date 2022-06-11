@@ -2,7 +2,7 @@
 
 To run this locally:
 
-1.- At this moment all changes are direct in master, please checkout master branch, and update all dependencies in build.gradle
+1.- At this moment all changes are direct in master, please checkout master branch, and update all dependencies in build.gradle.
 
 2.- Install docker
 
