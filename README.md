@@ -2,13 +2,13 @@
 
 To run this locally:
 
-1.- Install docker.
+1.- Install docker
 
 2.- After successful installation:
 
 Run the following commands:
 
-docker build -t deck .
+docker build -t deck . (Include the dot)
 
 docker run -p 8080:8080 deck
 
