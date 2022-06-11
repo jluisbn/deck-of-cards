@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
+import java.util.List;
 
 @RestController
 public class DeckController {
@@ -32,7 +33,14 @@ public class DeckController {
     }
 
     @PutMapping("/decks")
-    public Integer skipNextCard(@PathVariable Integer deckId, Integer cardIndex) {
+    @ResponseBody
+    public Integer skipNextCard(@RequestParam Integer deckId, Integer cardIndex) {
         return deckService.skipNextCard(deckId, cardIndex);
+    }
+
+    @GetMapping("/decks/{id}")
+    @ResponseBody
+    public List<Card> getDeckById(@PathVariable Integer id) {
+        return deckService.getDeckById(id);
     }
 }

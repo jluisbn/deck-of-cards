@@ -18,7 +18,7 @@ public class Deck {
     private void init() {
 
         int CARDS_PER_TYPE = 13;
-        int index = 1;
+        int index = 0;
 
         for (int i = 1; i <= CARDS_PER_TYPE; i++) {
             for (TypeOfCard type : TypeOfCard.values()) {

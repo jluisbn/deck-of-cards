@@ -22,4 +22,9 @@ public class GlobalExceptionHandler {
     public ResponseEntity deckNotFound(DeckOutOfBoundsException deckOutOfBoundsException) {
         return new ResponseEntity(deckOutOfBoundsException.getMessage(), HttpStatus.NOT_FOUND);
     }
+
+    @ExceptionHandler(value = CardAlreadyRemoved.class)
+    public ResponseEntity cardAlreadyRemoved(CardAlreadyRemoved cardAlreadyRemoved) {
+        return new ResponseEntity(cardAlreadyRemoved.getMessage(), HttpStatus.NOT_FOUND);
+    }
 }
