@@ -1,0 +1,89 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Deck of Cards",
+		"_postman_id": "cc7dfb40-26ee-75fb-a8a2-026e50195e03",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create deck",
+			"request": {
+				"url": "{{url}}/decks",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get card",
+			"request": {
+				"url": {
+					"raw": "{{url}}/decks?deckId=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"decks"
+					],
+					"query": [
+						{
+							"key": "deckId",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get a card from a deck, you can specify the index or by default will take the first one"
+			},
+			"response": []
+		},
+		{
+			"name": "Skip a card",
+			"request": {
+				"url": {
+					"raw": "{{url}}/decks?deckId=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"decks"
+					],
+					"query": [
+						{
+							"key": "deckId",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get a deck",
+			"request": {
+				"url": "{{url}}/decks/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
